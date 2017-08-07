@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="../../css/_all-skins.min.css">
 	<!-- bootstrap time picker -->
 	<link rel="stylesheet" href="../../css/bootstrap-timepicker.min.css">
-	<link rel="stylesheet" href="../../css/style.css"
+	<link rel="stylesheet" href="../../css/style.css">
 
   
 </head>
@@ -26,7 +26,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../../index.html" class="logo">
+    <a href="../../index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
 		<span class="logo-mini"><b class="glyphicon glyphicon-user"></b></span>
       <!-- logo for regular state and mobile devices -->
@@ -64,7 +64,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="../../../login.html" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="../../../login.php" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -103,7 +103,7 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class=" treeview">
-          <a href="../../index.html">
+          <a href="../../index.php">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
 		</li>
@@ -115,8 +115,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../manage_routes/add_new.html"><i class="fa fa-circle-o"></i> Add new</a></li>
-            <li><a href="../manage_routes/view.html"><i class="fa fa-circle-o"></i> View / Edit</a></li>
+            <li><a href="../manage_routes/add_new.php"><i class="fa fa-circle-o"></i> Add new</a></li>
+            <li><a href="../manage_routes/view.php"><i class="fa fa-circle-o"></i> View / Edit</a></li>
           </ul>
         </li>
         <li class="active treeview">
@@ -128,12 +128,12 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="#"><i class="fa fa-circle-o"></i> Add new Bus Shedule</a></li>
-            <li><a href="view_shedule.html"><i class="fa fa-circle-o"></i> View shedule</a></li>
-            <li><a href="view_bus.html"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
+            <li><a href="view_shedule.php"><i class="fa fa-circle-o"></i> View shedule</a></li>
+            <li><a href="view_bus.php"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
           </ul>
         </li>
         <li>
-          <a href="../../pages/pending_tickets.html">
+          <a href="../../pages/pending_tickets.php">
             <i class="fa fa-ticket"></i> <span>Pending Tickets</span>
             <span class="pull-right-container">
 				<small class="label pull-right bg-green">20</small>
@@ -141,7 +141,7 @@
           </a>
         </li>
         <li class="treeview">
-          <a href="../../pages/bus_ticket_info.html">
+          <a href="../../pages/bus_ticket_info.php">
             <i class="fa fa-info"></i> <span>Bus Ticket Info</span>
           </a>
         </li>
@@ -154,11 +154,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="../charts/chartjs.php"><i class="fa fa-circle-o"></i> ChartJS</a></li>
           </ul>
         </li>  
 				<li>
-          <a href="../../pages/calender.html">
+          <a href="../../pages/calender.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
             </span>

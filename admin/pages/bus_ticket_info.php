@@ -24,7 +24,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../index.html" class="logo">
+    <a href="../index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
 		<span class="logo-mini"><b class="glyphicon glyphicon-user"></b></span>
       <!-- logo for regular state and mobile devices -->
@@ -63,7 +63,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="../../login.html" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="../../login.php" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -102,7 +102,7 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class=" treeview">
-          <a href="../index.html">
+          <a href="../index.php">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
 		</li>
@@ -114,8 +114,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="manage_routes/add_new.html"><i class="fa fa-circle-o"></i> Add new</a></li>
-            <li><a href="manage_routes/view.html"><i class="fa fa-circle-o"></i> View / Edit</a></li>
+            <li><a href="manage_routes/add_new.php"><i class="fa fa-circle-o"></i> Add new</a></li>
+            <li><a href="manage_routes/view.php"><i class="fa fa-circle-o"></i> View / Edit</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -126,25 +126,24 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="manage_buses/add_new.html"><i class="fa fa-circle-o"></i> Add new</a></li>
-            <li><a href="manage_buses/view_shedule.html"><i class="fa fa-circle-o"></i> View shedule</a></li>
-            <li><a href="manage_buses/view_bus.html"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
+            <li><a href="manage_buses/add_new.php"><i class="fa fa-circle-o"></i> Add new</a></li>
+            <li><a href="manage_buses/view_shedule.php"><i class="fa fa-circle-o"></i> View shedule</a></li>
+            <li><a href="manage_buses/view_bus.php"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
           </ul>
         </li>
         <li class="">
-          <a href="pending_tickets.html">
+          <a href="pending_tickets.php">
             <i class="fa fa-ticket"></i> <span>Pending Tickets</span>
             <span class="pull-right-container">
 				<small class="label pull-right bg-green">20</small>
             </span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="bus_ticket_info.html">
+        <li class="active treeview">
+          <a href="#">
             <i class="fa fa-info"></i> <span>Bus Ticket Info</span>
           </a>
         </li>
-		
 				<li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
@@ -154,11 +153,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="charts/chartjs.php"><i class="fa fa-circle-o"></i> ChartJS</a></li>
           </ul>
         </li>  
-				<li class="active">
-          <a href="#">
+				<li>
+          <a href="calender.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
             </span>
@@ -179,27 +178,133 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li class="active">Bus Ticket Info</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
       <div class="container">
-				<div class="row">
-					<!-- heading of the content-->
+	  		<div class="row">
+				<!-- heading of the content -->
 					<div class="col-md-10 content-heading">
-						<h3 class="text-center">Calender</h3>		
+						<h3 class="text-center">Buses  Information</h3>		
 					</div>
-				</div>
-					<!-- starting calender-->
-				<div class="row">
-					<div class="col-md-11">
-						<iframe src="https://calendar.google.com/calendar/embed?title=""&amp;height=450&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=bhacker150%40gmail.com&amp;color=%2329527A&amp;src=en.bd%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=Asia%2FDhaka" style="border-width:0" width="100%" height="450" frameborder="0" scrolling="no"></iframe>	
+				<!-- table start -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="table-responsive">
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th>Bus#</th>
+										<th>Route</th>
+										<th>Date</th>
+										<th>Time</th>
+										<th>Total Seats</th>
+										<th>booked Seats</th>
+										<th>Available Seats</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>place(A) to place(B)</td>
+										<td>04/03/2017</td>
+										<td>1.30 P.M.</td>
+										<td>40</td>
+										<td>5</td>
+										<td>35</td>
+										<td>
+											<a class="btn btn-info" >Seat Info</a>
+											<a class="btn btn-success">Print Copy</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>place(A) to place(B)</td>
+										<td>04/03/2017</td>
+										<td>1.30 P.M.</td>
+										<td>40</td>
+										<td>5</td>
+										<td>35</td>
+										<td>
+											<a class="btn btn-info" >Seat Info</a>
+											<a class="btn btn-success">Print Copy</a>
+										</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>place(A) to place(B)</td>
+										<td>04/03/2017</td>
+										<td>1.30 P.M.</td>
+										<td>40</td>
+										<td>5</td>
+										<td>35</td>
+										<td>
+											<a class="btn btn-info" >Seat Info</a>
+											<a class="btn btn-success">Print Copy</a>
+										</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>place(A) to place(B)</td>
+										<td>04/03/2017</td>
+										<td>1.30 P.M.</td>
+										<td>40</td>
+										<td>5</td>
+										<td>35</td>
+										<td>
+											<a class="btn btn-info" >Seat Info</a>
+											<a class="btn btn-success">Print Copy</a>
+										</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>place(A) to place(B)</td>
+										<td>04/03/2017</td>
+										<td>1.30 P.M.</td>
+										<td>40</td>
+										<td>5</td>
+										<td>35</td>
+										<td>
+											<a class="btn btn-info" >Seat Info</a>
+											<a class="btn btn-success">Print Copy</a>
+										</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>place(A) to place(B)</td>
+										<td>04/03/2017</td>
+										<td>1.30 P.M.</td>
+										<td>40</td>
+										<td>5</td>
+										<td>35</td>
+										<td>
+											<a class="btn btn-info" >Seat Info</a>
+											<a class="btn btn-success">Print Copy</a>
+										</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>place(A) to place(B)</td>
+										<td>04/03/2017</td>
+										<td>1.30 P.M.</td>
+										<td>40</td>
+										<td>5</td>
+										<td>35</td>
+										<td>
+											<a class="btn btn-info" >Seat Info</a>
+											<a class="btn btn-success">Print Copy</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-					<!-- ending calender -->
-				</div>
-			</div>
+      	 <!-- table end -->
+      	</div>
+      </div> 
     </section>
     <!-- /.content -->
   </div>

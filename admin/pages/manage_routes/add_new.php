@@ -7,15 +7,15 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../css/AdminLTE.min.css">
-  <link rel="stylesheet" href="../css/_all-skins.min.css">
-	<link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../css/_all-skins.min.css">
+	<link rel="stylesheet" href="../../css/style.css">
 
   
 </head>
@@ -24,7 +24,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../index.html" class="logo">
+    <a href="../../index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
 		<span class="logo-mini"><b class="glyphicon glyphicon-user"></b></span>
       <!-- logo for regular state and mobile devices -->
@@ -39,17 +39,16 @@
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="../../img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Sifat Haque</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="../../img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Sifat Haque - Web Developer
@@ -63,7 +62,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="../../login.html" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="../../../login.php" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -80,7 +79,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="../../img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Sifat Haque</p>
@@ -102,11 +101,11 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class=" treeview">
-          <a href="../index.html">
+          <a href="../../index.php">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
 		</li>
-        <li class="treeview">
+        <li class="active treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Manage Route</span>
             <span class="pull-right-container">
@@ -114,11 +113,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="manage_routes/add_new.html"><i class="fa fa-circle-o"></i> Add new</a></li>
-            <li><a href="manage_routes/view.html"><i class="fa fa-circle-o"></i> View / Edit</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Add new</a></li>
+            <li><a href="view.php"><i class="fa fa-circle-o"></i> View / Edit</a></li>
           </ul>
         </li>
-        <li class="treeview">
+        <li class=" treeview">
           <a href="#">
             <i class="fa fa-bus"></i> <span>Manage Buses</span>
             <span class="pull-right-container">
@@ -126,21 +125,21 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="manage_buses/add_new.html"><i class="fa fa-circle-o"></i> Add new</a></li>
-            <li><a href="manage_buses/view_shedule.html"><i class="fa fa-circle-o"></i> View shedule</a></li>
-            <li><a href="manage_buses/view_bus.html"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
+            <li><a href="../../pages/manage_buses/add_new.php"><i class="fa fa-circle-o"></i> Add new</a></li>
+            <li><a href="../../pages/manage_buses/view_shedule.php"><i class="fa fa-circle-o"></i> View shedule</a></li>
+            <li><a href="../../pages/manage_buses/view_bus.php"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
           </ul>
         </li>
-        <li class="">
-          <a href="pending_tickets.html">
+        <li>
+          <a href="../../pages/pending_tickets.php">
             <i class="fa fa-ticket"></i> <span>Pending Tickets</span>
             <span class="pull-right-container">
 				<small class="label pull-right bg-green">20</small>
             </span>
           </a>
         </li>
-        <li class="active treeview">
-          <a href="#">
+        <li class="treeview">
+          <a href="../../pages/bus_ticket_info.php">
             <i class="fa fa-info"></i> <span>Bus Ticket Info</span>
           </a>
         </li>
@@ -153,11 +152,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="../charts/chartjs.php"><i class="fa fa-circle-o"></i> ChartJS</a></li>
           </ul>
         </li>  
 				<li>
-          <a href="calender.html">
+          <a href="../../pages/calender.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
             </span>
@@ -178,134 +177,33 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Bus Ticket Info</li>
+        <li class="">Dashboard</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
       <div class="container">
-	  		<div class="row">
-				<!-- heading of the content -->
-					<div class="col-md-10 content-heading">
-						<h3 class="text-center">Buses  Information</h3>		
-					</div>
-				<!-- table start -->
-					<div class="col-md-10 col-md-offset-1">
-						<div class="table-responsive">
-							<table class="table table-striped table-hover">
-								<thead>
-									<tr>
-										<th>Bus#</th>
-										<th>Route</th>
-										<th>Date</th>
-										<th>Time</th>
-										<th>Total Seats</th>
-										<th>booked Seats</th>
-										<th>Available Seats</th>
-										<th>Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td>place(A) to place(B)</td>
-										<td>04/03/2017</td>
-										<td>1.30 P.M.</td>
-										<td>40</td>
-										<td>5</td>
-										<td>35</td>
-										<td>
-											<a class="btn btn-info" >Seat Info</a>
-											<a class="btn btn-success">Print Copy</a>
-										</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>place(A) to place(B)</td>
-										<td>04/03/2017</td>
-										<td>1.30 P.M.</td>
-										<td>40</td>
-										<td>5</td>
-										<td>35</td>
-										<td>
-											<a class="btn btn-info" >Seat Info</a>
-											<a class="btn btn-success">Print Copy</a>
-										</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>place(A) to place(B)</td>
-										<td>04/03/2017</td>
-										<td>1.30 P.M.</td>
-										<td>40</td>
-										<td>5</td>
-										<td>35</td>
-										<td>
-											<a class="btn btn-info" >Seat Info</a>
-											<a class="btn btn-success">Print Copy</a>
-										</td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td>place(A) to place(B)</td>
-										<td>04/03/2017</td>
-										<td>1.30 P.M.</td>
-										<td>40</td>
-										<td>5</td>
-										<td>35</td>
-										<td>
-											<a class="btn btn-info" >Seat Info</a>
-											<a class="btn btn-success">Print Copy</a>
-										</td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td>place(A) to place(B)</td>
-										<td>04/03/2017</td>
-										<td>1.30 P.M.</td>
-										<td>40</td>
-										<td>5</td>
-										<td>35</td>
-										<td>
-											<a class="btn btn-info" >Seat Info</a>
-											<a class="btn btn-success">Print Copy</a>
-										</td>
-									</tr>
-									<tr>
-										<td>6</td>
-										<td>place(A) to place(B)</td>
-										<td>04/03/2017</td>
-										<td>1.30 P.M.</td>
-										<td>40</td>
-										<td>5</td>
-										<td>35</td>
-										<td>
-											<a class="btn btn-info" >Seat Info</a>
-											<a class="btn btn-success">Print Copy</a>
-										</td>
-									</tr>
-									<tr>
-										<td>7</td>
-										<td>place(A) to place(B)</td>
-										<td>04/03/2017</td>
-										<td>1.30 P.M.</td>
-										<td>40</td>
-										<td>5</td>
-										<td>35</td>
-										<td>
-											<a class="btn btn-info" >Seat Info</a>
-											<a class="btn btn-success">Print Copy</a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-      	 <!-- table end -->
+	  	<div class="row">
+				<div class="col-md-10 content-heading">
+					<h3 class="text-center">Add New Route</h3>		
+				</div>
+				<div class="col-md-6 col-md-offset-2">
+					<form>
+		 				<div class="form-group">
+								<label for="route_name" >Route Name</label>
+								<input type="text" class="form-control route_name" id="route_name" placeholder="Route Name">
+							</div>
+							<div class="form-group">
+								<input type="submit" value="ADD" class="btn btn-primary btn-block">
+							</div> 
+		 			</form>	
+				</div>
+      	 
       	</div>
-      </div> 
-    </section>
+      </div>  
+	  
+	</section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -317,11 +215,11 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.3 -->
-<script src="../js/jquery-2.2.3.min.js"></script>
+<script src="../../js/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../js/app.min.js"></script>
+<script src="../../js/app.min.js"></script>
 
 </body>
 </html>

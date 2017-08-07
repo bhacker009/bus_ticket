@@ -26,20 +26,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-					<a class="navbar-brand" href="../../index.html"><small><b>Get </b></small><strong class="text-primary">Ticket</strong></a>
+					<a class="navbar-brand" href="../../index.php"><small><b>Get </b></small><strong class="text-primary">Ticket</strong></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="../../index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="../../index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span>
 							</a>
               <ul class="dropdown-menu">
-                <li><a href="my_tickets.html">My Tickets</a></li>
-                <li><a href="../../login.html">Log-out</a></li>
-                <li><a href="../../sign_up.html">Register</a></li>
+                <li><a href="my_tickets.php">My Tickets</a></li>
+                <li><a href="../../login.php">Log-out</a></li>
+                <li><a href="../../sign_up.php">Register</a></li>
               </ul>
             </li>
           </ul>
@@ -51,7 +51,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h3><strong>About Page</strong></h3>
+					<h3><strong>Confirm your Ticket</strong></h3>
+				</div>
+				<div class="details col-md-10 col-md-offset-1">
+					<div class="alert alert-success">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<p>
+							Your Seats A2 , Confirmed Successfully. Thank you !
+						</p>
+					</div>
+				</div>
+				<div class="col-md-10 col-md-offset-1 main_content_area">
+						<a  href="#" class="btn btn-success btn-block ">Print This Ticket</a>
+						<a  href="my_tickets.php" class="btn btn-success btn-block">My tickets</a>
 				</div>
 			</div>
 		</div>

@@ -22,7 +22,7 @@
 			</div>
 			
 			<div class="col-md-5 col-md-offset-3 col-xs-5 col-xs-offset-3">
-			<form action="login.html">
+			<form action="login.php">
 				<div class="form-group">
 					<label for="user_name">User Name</label>
 					<input required type="text" placeholder="your Name" id="user_name" class="form-control">

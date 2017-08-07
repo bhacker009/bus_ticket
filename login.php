@@ -16,7 +16,7 @@
 <body>
 	<div class="container">
    <div class="omb_login">
-    	<h3 class="omb_authTitle">Login or <a href="sign_up.html">Sign up</a></h3>
+    	<h3 class="omb_authTitle">Login or <a href="sign_up.php">Sign up</a></h3>
 			<div class="row omb_row-sm-offset-3 omb_socialButtons">
 						<div class="col-xs-4 col-sm-2">
 							<a href="#" class="btn btn-lg btn-block omb_btn-facebook">
@@ -96,9 +96,9 @@
 	var pass = document.getElementsByName('password');
 	form[0].onsubmit = function(){
 		if(pass[0].value == 'admin') {
-			form[0].action = "admin/index.html";
+			form[0].action = "admin/index.php";
 		} else if( pass[0].value == 'user') {
-				form[0].action = "index.html";	
+				form[0].action = "index.php";	
 			} else {
 					alert("Wrong Password");
 					return false;

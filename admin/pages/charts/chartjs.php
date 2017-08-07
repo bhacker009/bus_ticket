@@ -24,7 +24,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../../index.html" class="logo">
+    <a href="../../index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
 		<span class="logo-mini"><b class="glyphicon glyphicon-user"></b></span>
       <!-- logo for regular state and mobile devices -->
@@ -51,7 +51,7 @@
                 <img src="../../img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Sifat Haque - Web Developer
+                  Sifat Haque- Web Developer
                   
                 </p>
               </li>
@@ -62,7 +62,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="../../../login.html" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -101,11 +101,11 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class=" treeview">
-          <a href="../../index.html">
+          <a href="../../index.php">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
 		</li>
-        <li class="active treeview">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Manage Route</span>
             <span class="pull-right-container">
@@ -113,8 +113,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Add new</a></li>
-            <li><a href="view.html"><i class="fa fa-circle-o"></i> View / Edit</a></li>
+            <li><a href="../manage_routes/add_new.php"><i class="fa fa-circle-o"></i> Add new</a></li>
+            <li><a href="../manage_routes/view.php"><i class="fa fa-circle-o"></i> View / Edit</a></li>
           </ul>
         </li>
         <li class=" treeview">
@@ -125,13 +125,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../pages/manage_buses/add_new.html"><i class="fa fa-circle-o"></i> Add new</a></li>
-            <li><a href="../../pages/manage_buses/view_shedule.html"><i class="fa fa-circle-o"></i> View shedule</a></li>
-            <li><a href="../../pages/manage_buses/view_bus.html"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
+            <li><a href="../manage_buses/add_new.php"><i class="fa fa-circle-o"></i> Add new</a></li>
+            <li><a href="../manage_buses/view_shedule.php"><i class="fa fa-circle-o"></i> View shedule</a></li>
+            <li><a href="../manage_buses/view_bus.php"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
           </ul>
         </li>
         <li>
-          <a href="../../pages/pending_tickets.html">
+          <a href="../../pages/pending_tickets.php">
             <i class="fa fa-ticket"></i> <span>Pending Tickets</span>
             <span class="pull-right-container">
 				<small class="label pull-right bg-green">20</small>
@@ -139,7 +139,7 @@
           </a>
         </li>
         <li class="treeview">
-          <a href="../../pages/bus_ticket_info.html">
+          <a href="../../pages/bus_ticket_info.php">
             <i class="fa fa-info"></i> <span>Bus Ticket Info</span>
           </a>
         </li>
@@ -152,11 +152,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="#"><i class="active fa fa-circle-o"></i> ChartJS</a></li>
           </ul>
         </li>  
 				<li>
-          <a href="../../pages/calender.html">
+          <a href="../../pages/calender.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
             </span>
@@ -177,33 +177,28 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="">Dashboard</li>
+        <li class="active">Dashboard</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
       <div class="container">
-	  	<div class="row">
-				<div class="col-md-10 content-heading">
-					<h3 class="text-center">Add New Route</h3>		
+				<div class="row">
+					<!-- heading of the content-->
+					<div class="col-md-10 content-heading">
+						<h3 class="text-center">Sales Chart</h3>		
+					</div>
 				</div>
-				<div class="col-md-6 col-md-offset-2">
-					<form>
-		 				<div class="form-group">
-								<label for="route_name" >Route Name</label>
-								<input type="text" class="form-control route_name" id="route_name" placeholder="Route Name">
-							</div>
-							<div class="form-group">
-								<input type="submit" value="ADD" class="btn btn-primary btn-block">
-							</div> 
-		 			</form>	
+					<!-- starting chart-->
+				<div class="row">
+					<div class="col-md-11">
+						<div id ="chart"></div>
+					</div>
+					<!-- ending chart -->
 				</div>
-      	 
-      	</div>
-      </div>  
-	  
-	</section>
+			</div>
+    </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -220,6 +215,12 @@
 <script src="../../js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../js/app.min.js"></script>
-
+<!--time picker -->
+<script src="../../js/bootstrap-timepicker.min.js"></script>
+<!-- chart js -->
+<script src="../../js/jquery.flot.js"></script>
+<script src="../../js/jquery.flot.categories.js"></script>
+<!-- my js file-->
+<script src="../../js/main.js"></script>
 </body>
 </html>

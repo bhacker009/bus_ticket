@@ -7,10 +7,10 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="user/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="user/css/font-awesome.min.css">
-  <link rel="stylesheet" href="user/css/style.css" >
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css" >
 
 </head>
 	
@@ -26,20 +26,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-					<a class="navbar-brand" href="#"><small><b>Get </b></small><strong class="text-primary">Ticket</strong></a>
+					<a class="navbar-brand" href="../../index.php"><small><b>Get </b></small><strong class="text-primary">Ticket</strong></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="../../index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="#">Contact</a></li>
             <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span>
 							</a>
               <ul class="dropdown-menu">
-                <li><a href="user/pages/my_tickets.html">My Tickets</a></li>
-                <li><a href="login.html">Log-out</a></li>
-                <li><a href="sign_up.html">Register</a></li>
+                <li><a href="my_tickets.php">My Tickets</a></li>
+                <li><a href="../../login.php">Log-out</a></li>
+                <li><a href="../../sign_up.php">Register</a></li>
               </ul>
             </li>
           </ul>
@@ -51,8 +51,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h1>Coming Soon !!</h1>
-					<a href="user/pages/select_date.html" class="btn btn-primary btn-lg">Book Your Ticket Today</a>
+					<h3><strong>Contact Page</strong></h3>
 				</div>
 			</div>
 		</div>
@@ -70,13 +69,13 @@
 	
 	
 <!-- jQuery 2.2.3 -->
-<script src="user/js/jquery-2.2.3.min.js"></script>
+<script src="../js/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="user/js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!--jquery ui -->
+<script src="../js/jquery-ui.min.js"></script>
 <!--main js-->
-<script src="user/js/main.js"></script>
-<script>
-	
-</script>
+<script src="../js/main.js"></script>
+
 </body>
 </html>

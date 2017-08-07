@@ -60,7 +60,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="../login.html" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="../login.php" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -99,7 +99,7 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
-          <a href="index.html">
+          <a href="index.php">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
 		</li>
@@ -111,8 +111,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/manage_routes/add_new.html"><i class="fa fa-circle-o"></i> Add new</a></li>
-            <li><a href="pages/manage_routes/view.html"><i class="fa fa-circle-o"></i> View / Edit</a></li>
+            <li><a href="pages/manage_routes/add_new.php"><i class="fa fa-circle-o"></i> Add new</a></li>
+            <li><a href="pages/manage_routes/view.php"><i class="fa fa-circle-o"></i> View / Edit</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -123,13 +123,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/manage_buses/add_new.html"><i class="fa fa-circle-o"></i> Add new</a></li>
-            <li><a href="pages/manage_buses/view_shedule.html"><i class="fa fa-circle-o"></i> View shedule</a></li>
-            <li><a href="pages/manage_buses/view_bus.html"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
+            <li><a href="pages/manage_buses/add_new.php"><i class="fa fa-circle-o"></i> Add new</a></li>
+            <li><a href="pages/manage_buses/view_shedule.php"><i class="fa fa-circle-o"></i> View shedule</a></li>
+            <li><a href="pages/manage_buses/view_bus.php"><i class="fa fa-circle-o"></i> View / Edit Bus</a></li>
           </ul>
         </li>
         <li>
-          <a href="pages/pending_tickets.html">
+          <a href="pages/pending_tickets.php">
             <i class="fa fa-ticket"></i> <span>Pending Tickets</span>
             <span class="pull-right-container">
 							<small class="label pull-right bg-green">20</small>
@@ -137,7 +137,7 @@
           </a>
         </li>
         <li class="treeview">
-          <a href="pages/bus_ticket_info.html">
+          <a href="pages/bus_ticket_info.php">
             <i class="fa fa-info"></i> <span>Bus Ticket Info</span>
           </a>
         </li>
@@ -150,11 +150,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="pages/charts/chartjs.php"><i class="fa fa-circle-o"></i> ChartJS</a></li>
           </ul>
         </li>  
 				<li>
-          <a href="pages/calender.html">
+          <a href="pages/calender.php">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
             </span>
@@ -194,7 +194,7 @@
             <div class="icon">
               <i class="fa fa-bus"></i>
             </div>
-            <a href="pages/manage_buses/view_bus.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="pages/manage_buses/view_bus.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -209,7 +209,7 @@
             <div class="icon">
               <i class="fa fa-taxi"></i>
             </div>
-            <a href="pages/manage_buses/view_shedule.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="pages/manage_buses/view_shedule.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -224,7 +224,7 @@
             <div class="icon">
               <i class="fa fa-line-chart"></i>
             </div>
-            <a href="pages/charts/chartjs.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="pages/charts/chartjs.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -239,7 +239,7 @@
             <div class="icon">
               <i class="fa fa-ticket"></i>
             </div>
-            <a href="pages/pending_tickets.html" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="pages/pending_tickets.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

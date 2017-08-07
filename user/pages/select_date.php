@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../css/font-awesome.min.css">
+	<!-- jquery ui-->
+	<link rel="stylesheet" href="../css/jquery-ui.min.css">
   <link rel="stylesheet" href="../css/style.css" >
 
 </head>
@@ -26,20 +28,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-					<a class="navbar-brand" href="../../index.html"><small><b>Get </b></small><strong class="text-primary">Ticket</strong></a>
+					<a class="navbar-brand" href="../../index.php"><small><b>Get </b></small><strong class="text-primary">Ticket</strong></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="../../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="../../index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span>
 							</a>
               <ul class="dropdown-menu">
-                <li><a href="my_tickets.html">My Tickets</a></li>
-                <li><a href="../../login.html">Log-out</a></li>
-                <li><a href="../../sign_up.html">Register</a></li>
+                <li><a href="my_tickets.php">My Tickets</a></li>
+                <li><a href="../../login.php">Log-out</a></li>
+                <li><a href="../../sign_up.php">Register</a></li>
               </ul>
             </li>
           </ul>
@@ -51,56 +53,24 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h3><strong>Confirm your Ticket</strong></h3>
-				</div>
-				<div class="details col-md-12">
-					<table class="confirm_top_info">
-							<tr>
-								<td>Bus ID</td>
-								<td>:</td>
-								<td>128</td>
-							</tr>
-							<tr>
-								<td>Route</td>
-								<td>:</td>
-								<td>Place 1 to Place 2</td>
-							</tr>
-							<tr>
-								<td>Date</td>
-								<td>:</td>
-								<td> 04/05/2017</td>
-							</tr>
-							<tr>
-								<td>Time</td>
-								<td>:</td>
-								<td>09:00 AM</td>
-							</tr>
-							<tr>
-								<td>Total Seats</td>
-								<td>:</td>
-								<td>30</td>
-							</tr>
-						</table>
+					<h3><strong>Pick a Date and Route</strong></h3>
 				</div>
 				<div class="col-md-10 col-md-offset-1 main_content_area">
-					<form action="transection_id.html">
-						<div class="form-group">
-							<label for="name">Passenger's name</label>
-							<input type="text" class="form-control" id="name" placeholder="Enter your Name" required >
+					<form>
+						<select class="form-control form-group">
+							<option>Select Route</option>
+							<option>Place(A) to place(B)</option>
+							<option>Place(A) to place(B)</option>
+							<option>Place(A) to place(B)</option>
+							<option>Place(A) to place(B)</option>
+						</select>
+						<div class="form-group-lg">
+							<input type="text" class="form-control set_date " id="set_date" placeholder="Set date">
 						</div>
+						<br>
 						<div class="form-group">
-							<label for="number">Passenger's Mobile Number</label>
-							<input type="text" class="form-control" id="number" placeholder="Enter your Number" required >
+							<a href="view_bus_shedule.php" class="btn btn-primary btn-block">View Buses</a>
 						</div>
-						<div class="form-group">
-							<label for="start_place">Start Place</label>
-							<input type="text" class="form-control" id="start_place" placeholder="Start Place" required >
-						</div>
-						<div class="form-group">
-							<label for="end_place">Depart Place</label>
-							<input type="text" class="form-control" id="end_place" placeholder="Depart Place" required>
-						</div>
-						<input type="submit" class="btn btn-success btn-block" value="Confirm"  >
 					</form>
 				</div>
 			</div>
@@ -126,6 +96,14 @@
 <script src="../js/jquery-ui.min.js"></script>
 <!--main js-->
 <script src="../js/main.js"></script>
-
+<!--date picker -->
+<script>
+	$('document').ready(function(){
+		// date picker
+    $( "#set_date" ).datepicker({
+			showButtonPanel : true
+		});
+});
+</script>
 </body>
 </html>
