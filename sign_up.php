@@ -22,14 +22,14 @@
 			</div>
 			
 			<div class="col-md-5 col-md-offset-3 col-xs-5 col-xs-offset-3">
-			<form action="login.php">
+			<form action="" method="post">
 				<div class="form-group">
 					<label for="user_name">User Name</label>
-					<input required type="text" placeholder="your Name" id="user_name" class="form-control">
+					<input required type="text" placeholder="your Name" name="user_name" id="user_name" class="form-control">
 				</div>
 				<div class="form-group">
 					<label for="password">Password</label>
-					<input required type="password" placeholder="your password" id="password" class="form-control">
+					<input required type="password" placeholder="your password" id="password" name="password" class="form-control">
 				</div>
 				<div class="form-group">
 					<label for="confirm_password">confirm password</label>
